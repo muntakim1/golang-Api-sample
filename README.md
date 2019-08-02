@@ -1,5 +1,12 @@
 # golang-Api-sample
 
+# Installing GOlang
+
+getting started with go
+
+https://golang.org/doc/install#install
+
+
 # Create a GOPATH
 ```export GOPATH=$USERPROFILE/go/ ```
 

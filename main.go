@@ -41,7 +41,7 @@ func getBook(w http.ResponseWriter, r *http.Request) {
 
 func createBook(w http.ResponseWriter, r *http.Request) {
 
-	db, err := sql.Open("mysql", "muntakim:pranto172472@tcp(localhost:3306)/test")
+	db, err := sql.Open("mysql", "root:172472@tcp(localhost:3306)/test")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -61,7 +61,7 @@ func createBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func deleteBook(w http.ResponseWriter, r *http.Request) {
-	db, err := sql.Open("mysql", "muntakim:pranto172472@tcp(localhost:3306)/test")
+	db, err := sql.Open("mysql", "root:172472@tcp(localhost:3306)/test")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -87,7 +87,7 @@ func deleteBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func updateBook(w http.ResponseWriter, r *http.Request) {
-	db, err := sql.Open("mysql", "muntakim:pranto172472@tcp(localhost:3306)/test")
+	db, err := sql.Open("mysql", "root:172472@tcp(localhost:3306)/test")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -116,7 +116,7 @@ func updateBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	db, err := sql.Open("mysql", "muntakim:pranto172472@tcp(localhost:3306)/test")
+	db, err := sql.Open("mysql", "root:172472@tcp(localhost:3306)/test")
 	if err != nil {
 		panic(err.Error())
 	}
